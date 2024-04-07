@@ -400,6 +400,13 @@ ul {
 }
 .consultation-left{
     padding-top: 56px;
+    position: relative;
+    .consultant-img{
+        position: absolute;
+        top: 25%;
+        right: -14%;
+        z-index: 1;
+    }
     p{
         max-width: 458px;
         width: 100%;
@@ -409,6 +416,9 @@ ul {
         font-style: normal;
         font-weight: 400;
         line-height: 26px;
+        margin-bottom: 94px;
+        position: relative;
+        z-index: 2;
     }
 }
 .high-demand-card{
@@ -424,12 +434,14 @@ ul {
     width: 100%;
     margin: auto;
     padding: 18px 14px;
+    position: relative;
+    z-index: 2;
     h4{
         color: #000;
         font-family: Poppins;
         font-size: 29.333px;
         font-weight: 600;
-        line-height: normal;
+        line-height: 110%;
         margin-bottom: 0px;
         span{
             margin-top: 4px;
@@ -438,7 +450,87 @@ ul {
             font-size: 20px;
             font-style: normal;
             font-weight: 500;
+            line-height: 100%;
+        }
+    }
+}
+
+.consultation-right{
+    padding-left: 25px;
+}
+.consultation-form-card{
+    background: #0C0D0D;
+    padding: 52px 45px 47px 45px;
+    border-radius: 30px;
+    overflow: hidden !important;
+    max-width: 530px;
+    width: 100%;
+    margin-right: auto;
+    position: relative;
+    z-index: 0;
+    form{
+        h3{
+            text-align: center;
+            color: #E2BA48;
+            font-family: Syne;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
             line-height: normal;
+            max-width: 360px;
+            margin: auto;
+            margin-bottom: 8px;
+        }
+        p{
+            text-align: center;
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            max-width: 360px;
+            margin: auto;
+            margin-bottom: 49px;
+        }
+    }
+}
+.hs-input {
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    position: relative;
+    height: 60px;
+    margin-bottom: 28px;
+    label{
+        position: absolute;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 0px 3px;
+        left: 10px;
+        top: -14px;
+        background: #0C0D0D;
+    }
+    input{
+        color: #FFFFFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 5px 13px;
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        &::placeholder{
+            color: #7A6565;
         }
     }
 }
