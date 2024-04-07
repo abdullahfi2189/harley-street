@@ -155,7 +155,15 @@ ul {
     background-position: bottom right;
     background-repeat: no-repeat;
     padding-top: 197px;
-    min-height: 120vh;
+    min-height: 95vh;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    .banner-img{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
 }
 
 .banner-content {
