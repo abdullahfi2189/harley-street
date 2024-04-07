@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+/*-- import fonts --*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap');
 
+/*-- reset style --*/
 * {
     padding: 0px;
     margin: 0px;
@@ -10,6 +12,7 @@ body {
     padding: 0px;
     margin: 0px;
     background: #FFFAF1;
+    font-family: Poppins;
 }
 
 a {
@@ -29,7 +32,57 @@ ul {
     margin: auto;
 
 }
+.avater{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    img{
+        object-fit: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+}
 
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12.5px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 7px 12px;
+    border-radius: 69.659px;
+    height: 42px;
+    width: 225px;
+    &.bg-yellow{
+        color: #000;
+        background: #E2BA48;
+    }
+    &.bg-none{
+        color: #0C0D0D;
+        border-radius: 100px;
+        border: 2px solid #2F3B4B;
+        background: transparent;
+    }
+}
+
+.section-title{
+    color: #000000;
+    font-family: Syne;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    span{
+        color: #E2BA48;
+    }
+}
+
+/*-- header style start --*/
 .header-section {
     position: fixed;
     z-index: 999;
@@ -37,7 +90,6 @@ ul {
     left: 0px;
     width: 100%;
 }
-
 .top-header {
     background: #2F3B4B;
     padding: 8px 0px;
@@ -88,8 +140,6 @@ ul {
         }
     }
 }
-
-
 .main-header {
     background: rgba(10, 11, 15, 0.50);
     backdrop-filter: blur(11px);
@@ -101,8 +151,6 @@ ul {
         height: 90px;
 
         .header {
-            &-left {}
-
             &-center {
                 max-width: 507px;
                 width: 100%;
@@ -125,47 +173,29 @@ ul {
                     }
                 }
             }
-
-            &-right {
-                .header-btn {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 12.5px;
-                    color: #000;
-                    text-align: center;
-                    font-family: Poppins;
-                    font-size: 13px;
-                    font-weight: 500;
-                    line-height: normal;
-                    padding: 7px 12px;
-                    border-radius: 69.659px;
-                    background: #E2BA48;
-                    height: 42px;
-                    width: 225px;
-                }
-            }
         }
     }
 }
+/*-- header style end --*/
 
+/*-- banner style start --*/
 .banner-section {
     background: url(../images/bg/banner-bg.png);
     background-size: cover;
     background-position: bottom right;
     background-repeat: no-repeat;
     padding-top: 197px;
-    min-height: 95vh;
     position: relative;
     border-radius: 50px;
     overflow: hidden;
-    .banner-img{
+    padding-bottom: 85px;
+
+    .banner-img {
         position: absolute;
         right: 0px;
         bottom: 0px;
     }
 }
-
 .banner-content {
     h1 {
         max-width: 636px;
@@ -177,8 +207,141 @@ ul {
         font-weight: 600;
         line-height: normal;
         margin-bottom: 73px;
-        span{
+
+        span {
             color: #E2BA48;
         }
     }
+    .banner-box{
+        border-radius: 30px;
+        border: 2px solid #E2BA48;
+        background: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(11px);
+        max-width: 457px;
+        padding: 25px;
+        h3{
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 7px;
+        }
+        p{
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 42px;
+        }
+        h6{
+            color: #E2BA48;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            span{
+                font-weight: 400;
+            }
+        }
+        .icon-btn{
+            font-size: 18px;
+            height: 60px;
+            width: 323px;
+            margin-top: 12px;
+        }
+    }
 }
+.banner-bottom{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+.banner-bottom-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            margin-left: -24px;
+            &:nth-child(1){
+                margin-left: 0px;
+            }
+            .avater{
+                height: 55px;
+                width: 55px;
+            }  
+        }
+    }
+    .stars{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 9px;
+        strong{
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35.5px;
+            span{
+                font-weight: 400;
+            }
+        }
+    }
+}
+/*-- banner style end --*/
+
+/*-- Why Choose Us style start --*/
+.why-chose-us-section{
+    padding-top: 109px;
+    padding-bottom: 75px;
+}
+.why-chose-content{
+    padding-top: 40px;
+    .chose-us-card{
+        border-radius: 30px;
+        background: #0C0D0D;
+        padding: 30px 40px;
+        h6{
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 155%;
+            margin-top: 46px;
+            margin-bottom: 0px;
+            span{
+                color: #E2BA48;
+            }
+        }
+    }
+    .why-chose-btns{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 41px;
+
+        .icon-btn{
+            width: 323px;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+/*-- Why Choose Us style end --*/
