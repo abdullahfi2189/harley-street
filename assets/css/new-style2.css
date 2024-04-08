@@ -1,0 +1,305 @@
+/* ======= (TREATMENT PLAN SECTION START) ======= */
+.treatment_plan_section {
+    background: #fff;
+    padding: 80px 0;
+}
+    .section_title {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 64px;
+}
+    .title_logo {}
+    .title_logo img {}
+    .section_title h2 {
+    color: #000;
+    text-align: center;
+    font-family: Syne;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+    .plan_item {
+    position: relative;
+}
+.most_popular {
+    padding: 3px 37px;
+    background: #E2BA48;
+    border-radius: 100px 100px 0 0;
+    height: 27px;
+    width: 187px;
+    margin: auto;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.most_popular h3 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+.plan_pricing_top {
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    background: #2F3B4B;
+    padding: 18px 46px;
+}
+.plan_pricing_top p {
+    color: #DAC4C4;
+    font-family: Poppins;
+    font-size: 15.333px;
+    font-weight: 500;
+    line-height: normal;
+}
+.plan_pricing_top span {
+    color: #C2AA65;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: #fff line-through;
+}
+.plan_pricing_top h3 {
+    font-family: Poppins;
+    font-size: 39.333px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #EDBA28;
+}
+.plan_pricing_top h4 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+.pricing_service {
+    padding: 0 22px 58px 31px;
+    border-radius: 0px 0px 15px 15px;
+    border-bottom: 2px solid #E2BA48;
+    border-right: 2px solid #E2BA48;
+    border-left: 2px solid #E2BA48;
+    background: #FFFEFF;
+    height: 380px;
+}
+.pricing_service h5 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 8px 0;
+}
+.pricing_service_wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.pricing_service_content {
+    display: flex;
+    gap: 10px;
+}
+.pricing_service_content img {
+    width: 100%;
+}
+.pricing_service_wrapper p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.content_icon_wrapper {
+    height: 13px;
+    width: 13px;
+    color: #EACD7C;
+}
+.content_image_wrapper img {
+    padding-right: 10px;
+}
+.content_wrapper {}
+.content_wrapper p {}
+
+.pricing_service_wrapper span {
+    font-weight: 600;
+}
+.book_now_button {
+    display: flex;
+    align-items: center;
+    width: 182px;
+    height: 60px;
+    justify-content: center;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.book_now_button .btn {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    background: #E2BA48;
+    padding: 10px 16px;
+    border-radius: 100px;
+}
+.book_now_button .btn img {
+    margin-right: 12.5px;
+}
+.we_accept {
+    margin-top: 85px;
+}
+.we_accept h3 {
+    margin: 0;
+    color: #03045E;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.we_accept .cards {  
+    margin-top: 17.31px;
+}
+.we_accept .cards img {
+    margin: 0 10px;
+}
+/* ======= (TREATMENT PLAN SECTION END) ======= */
+
+
+
+
+/* ======= (OUR CLINICS SECTION START) ======= */
+.our_clinics_section {
+    padding-top: 106px;
+    padding-bottom: 73.6px;
+}  
+.clinics_top {
+    margin: 0 15.66px;
+    margin-bottom: 53px;
+}
+.clinics_top h2 {
+    color: #000;
+    font-family: Syne;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+.clinics_top .btn {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    background: #E2BA48;
+    padding: 10px 16px;
+    border-radius: 100px;
+}
+.clinics_top .btn img {
+    margin-right: 12.5px;
+}
+
+.clinics_item {
+    background: #fff;
+    border-radius: 0 0 27.868px 27.868px;
+}
+.clinics_item img {}
+.clinics_item_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23.22px 22.78px 18.58px 22.78px;
+}
+.clinics_content_left {}
+.clinics_content_left h4 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+.clinics_content_left p {
+    color: #767676;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+.clinics_content_left span {
+    font-weight: 400;
+}
+.clinics_content_right {}
+.clinics_content_right .btn {}
+/* ======= (OUR CLINICS SECTION END) ======= */
+
+
+
+
+/* ======= (MEET OUR DOCTORS SECTION START) ======= */
+.meet_our_doctors_section {
+    padding: 55px 0;
+}
+.doctors_top {}
+.doctors_top h2 {
+    color: #000;
+    font-family: Syne;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.doctors_main {
+    padding: 40px 0;
+}
+
+.doctors_item {}
+
+.doctors_item img {
+    border-radius: 30px;
+    background: url(<path-to-image>) #7790A6 0px 1.919px / 100% 148.635% no-repeat;
+}
+
+.doctors_content {
+    padding: 0 48px;
+}
+
+.doctors_content h5 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 16px;
+    margin-bottom: 7px;
+}
+
+.doctors_content p {
+    color: #2F3B4B;
+    font-family: Poppins;
+    line-height: normal;
+    margin: 0;
+    font-weight: 400;
+}
+/* ======= (MEET OUR DOCTORS SECTION END) ======= */
+
+
+
+
+
+
+    
