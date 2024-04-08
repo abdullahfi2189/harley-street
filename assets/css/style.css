@@ -82,6 +82,11 @@ ul {
   color: #E2BA48;
 }
 
+.form-check-input:checked {
+  background-color: transparent !important;
+  border-color: #FFFFFF !important;
+}
+
 /*-- header style start --*/
 .header-section {
   position: fixed;
@@ -585,3 +590,122 @@ ul {
 }
 
 /*-- book-consultation-section style end --*/
+/*-- celebrity-treatment-section start --*/
+.celebrity-treatment-section {
+  margin-top: 123px;
+  background: #000;
+  padding-top: 97px;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+}
+.celebrity-treatment-section .treatment-img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 0;
+}
+.celebrity-treatment-section::after {
+  content: "";
+  height: 231px;
+  background: #FFF;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.celebrity-treatment-text {
+  max-width: 555px;
+  padding-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+.celebrity-treatment-text h2 {
+  color: #E2BA48;
+  font-family: Syne;
+  font-size: 93.353px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+.celebrity-treatment-text h3 {
+  color: #FFF;
+  font-family: Syne;
+  font-size: 73.835px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.limited-offer-section {
+  padding: 158px 24px 75px 62px;
+  background: url(../images/bg/limited-offer-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 1337px;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.limited-offer-inner p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.limited-offer-inner p strong {
+  font-weight: 700;
+}
+
+/*-- celebrity-treatment-section end --*/
+/*-- book-now-payment-section start --*/
+.book-now-payment-section {
+  background: #FFFFFF;
+  padding-top: 36px;
+  padding-bottom: 107px;
+  margin-bottom: 12px;
+}
+.book-now-payment-section .pay-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.book-now-payment-section .pay-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 876px;
+  width: 100%;
+}
+.book-now-payment-section .pay-list .icon-btn {
+  max-width: 288px;
+  width: 100%;
+  min-width: 180px;
+  height: 60px;
+  font-size: 18px;
+}
+
+/*-- book-now-payment-section end --*/
+/*-- our-reviews-section start --*/
+.our-reviews-section {
+  padding-top: 93px;
+  padding-bottom: 88px;
+  position: relative;
+}
+.our-reviews-section::after {
+  content: "";
+  height: 100%;
+  width: 65%;
+  background: #FFFFFF;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/*-- our-reviews-section end --*/
