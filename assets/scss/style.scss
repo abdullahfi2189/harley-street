@@ -14,6 +14,9 @@ body {
     background: #FFFAF1;
     font-family: Poppins;
 }
+.body-container{
+    overflow-x: hidden;
+}
 
 a {
     text-decoration: none;
@@ -32,11 +35,13 @@ ul {
     margin: auto;
 
 }
-.avater{
+
+.avater {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    img{
+
+    img {
         object-fit: cover;
         position: absolute;
         height: 100%;
@@ -58,11 +63,13 @@ ul {
     border-radius: 69.659px;
     height: 42px;
     width: 225px;
-    &.bg-yellow{
+
+    &.bg-yellow {
         color: #000;
         background: #E2BA48;
     }
-    &.bg-none{
+
+    &.bg-none {
         color: #0C0D0D;
         border-radius: 100px;
         border: 2px solid #2F3B4B;
@@ -70,14 +77,15 @@ ul {
     }
 }
 
-.section-title{
+.section-title {
     color: #000000;
     font-family: Syne;
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    span{
+
+    span {
         color: #E2BA48;
     }
 }
@@ -95,6 +103,7 @@ ul {
     left: 0px;
     width: 100%;
 }
+
 .top-header {
     background: #2F3B4B;
     padding: 8px 0px;
@@ -145,6 +154,7 @@ ul {
         }
     }
 }
+
 .main-header {
     background: rgba(10, 11, 15, 0.50);
     backdrop-filter: blur(11px);
@@ -181,6 +191,7 @@ ul {
         }
     }
 }
+
 /*-- header style end --*/
 
 /*-- banner style start --*/
@@ -201,6 +212,7 @@ ul {
         bottom: 0px;
     }
 }
+
 .banner-content {
     h1 {
         max-width: 636px;
@@ -217,14 +229,16 @@ ul {
             color: #E2BA48;
         }
     }
-    .banner-box{
+
+    .banner-box {
         border-radius: 30px;
         border: 2px solid #E2BA48;
         background: rgba(255, 255, 255, 0.07);
         backdrop-filter: blur(11px);
         max-width: 457px;
         padding: 25px;
-        h3{
+
+        h3 {
             color: #FFF;
             font-family: Poppins;
             font-size: 38px;
@@ -233,7 +247,8 @@ ul {
             line-height: normal;
             margin-bottom: 7px;
         }
-        p{
+
+        p {
             color: #FFF;
             font-family: Poppins;
             font-size: 22px;
@@ -242,18 +257,21 @@ ul {
             line-height: normal;
             margin-bottom: 42px;
         }
-        h6{
+
+        h6 {
             color: #E2BA48;
             font-family: Poppins;
             font-size: 24px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            span{
+
+            span {
                 font-weight: 400;
             }
         }
-        .icon-btn{
+
+        .icon-btn {
             font-size: 18px;
             height: 60px;
             width: 323px;
@@ -261,66 +279,79 @@ ul {
         }
     }
 }
-.banner-bottom{
+
+.banner-bottom {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     position: relative;
     z-index: 1;
 }
-.banner-bottom-right{
+
+.banner-bottom-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 16px;
     flex-wrap: wrap;
-    ul{
+
+    ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        li{
+
+        li {
             margin-left: -24px;
-            &:nth-child(1){
+
+            &:nth-child(1) {
                 margin-left: 0px;
             }
-            .avater{
+
+            .avater {
                 height: 55px;
                 width: 55px;
-            }  
+            }
         }
     }
-    .stars{
+
+    .stars {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         gap: 9px;
-        strong{
+
+        strong {
             color: #FFF;
             font-family: Roboto;
             font-size: 18px;
             font-style: normal;
             font-weight: 700;
             line-height: 35.5px;
-            span{
+
+            span {
                 font-weight: 400;
             }
         }
     }
 }
+
 /*-- banner style end --*/
 
 /*-- Why Choose Us style start --*/
-.why-chose-us-section{
+.why-chose-us-section {
     padding-top: 109px;
     padding-bottom: 75px;
 }
-.why-chose-content{
+
+.why-chose-content {
     padding-top: 40px;
-    .chose-us-card{
+
+    .chose-us-card {
         border-radius: 30px;
         background: #0C0D0D;
         padding: 30px 40px;
-        h6{
+
+        h6 {
             color: #FFFFFF;
             font-family: Poppins;
             font-size: 20px;
@@ -329,19 +360,21 @@ ul {
             line-height: 155%;
             margin-top: 46px;
             margin-bottom: 0px;
-            span{
+
+            span {
                 color: #E2BA48;
             }
         }
     }
-    .why-chose-btns{
+
+    .why-chose-btns {
         margin-top: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 41px;
 
-        .icon-btn{
+        .icon-btn {
             width: 323px;
             height: 60px;
             font-size: 18px;
@@ -349,14 +382,16 @@ ul {
         }
     }
 }
+
 /*-- Why Choose Us style end --*/
 
 /*-- book-consultation-section style end --*/
-.book-consultation-section{
+.book-consultation-section {
     background-color: #FFFFFF;
     padding-top: 113px;
     position: relative;
-    &::before{
+
+    &::before {
         content: '';
         height: 184px;
         padding-bottom: 0px;
@@ -366,7 +401,8 @@ ul {
         width: 100%;
         background: #FFFAF1
     }
-    &::after{
+
+    &::after {
         content: '';
         background: #2F3B4B;
         position: absolute;
@@ -376,9 +412,11 @@ ul {
         top: 82px;
         z-index: 0;
     }
-    .book-consultation-title{
+
+    .book-consultation-title {
         position: relative;
-        &::after{
+
+        &::after {
             content: '';
             border-radius: 0px 154px 154px 0px;
             background: #2F3B4B;
@@ -389,15 +427,18 @@ ul {
             top: -31px;
             z-index: 0;
         }
-        .section-title{
+
+        .section-title {
             position: relative;
             z-index: 1;
             margin-bottom: 0px;
-            span{
+
+            span {
                 color: #FFFFFF;
             }
         }
-        h3{
+
+        h3 {
             position: relative;
             z-index: 1;
             color: #FFF;
@@ -406,22 +447,26 @@ ul {
             font-weight: 600;
             line-height: normal;
             margin-bottom: 0px;
-            span{
+
+            span {
                 color: #E2BA48;
             }
         }
     }
 }
-.consultation-left{
+
+.consultation-left {
     padding-top: 56px;
     position: relative;
-    .consultant-img{
+
+    .consultant-img {
         position: absolute;
         top: 25%;
         right: -14%;
         z-index: 1;
     }
-    p{
+
+    p {
         max-width: 458px;
         width: 100%;
         color: #2F3B4B;
@@ -435,7 +480,8 @@ ul {
         z-index: 2;
     }
 }
-.high-demand-card{
+
+.high-demand-card {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -450,14 +496,16 @@ ul {
     padding: 18px 14px;
     position: relative;
     z-index: 2;
-    h4{
+
+    h4 {
         color: #000;
         font-family: Poppins;
         font-size: 29.333px;
         font-weight: 600;
         line-height: 110%;
         margin-bottom: 0px;
-        span{
+
+        span {
             margin-top: 4px;
             color: #645F66;
             font-family: Poppins;
@@ -469,10 +517,11 @@ ul {
     }
 }
 
-.consultation-right{
+.consultation-right {
     padding-left: 25px;
 }
-.consultation-form-card{
+
+.consultation-form-card {
     background: #0C0D0D;
     padding: 52px 45px 47px 45px;
     border-radius: 30px;
@@ -482,8 +531,9 @@ ul {
     margin-right: auto;
     position: relative;
     z-index: 0;
-    form{
-        h3{
+
+    form {
+        h3 {
             text-align: center;
             color: #E2BA48;
             font-family: Syne;
@@ -495,7 +545,8 @@ ul {
             margin: auto;
             margin-bottom: 8px;
         }
-        p{
+
+        p {
             text-align: center;
             color: #FFF;
             text-align: center;
@@ -508,7 +559,8 @@ ul {
             margin: auto;
             margin-bottom: 49px;
         }
-        .submit-btn{
+
+        .submit-btn {
             border-radius: 100px;
             background: linear-gradient(0deg, #E2BA48 0%, #E2BA48 100%), #FFF;
             height: 50px;
@@ -525,13 +577,15 @@ ul {
         }
     }
 }
+
 .hs-input {
     border-radius: 5px;
     border: 1px solid #FFF;
     position: relative;
     height: 60px;
     margin-bottom: 28px;
-    label{
+
+    label {
         position: absolute;
         color: #FFF;
         text-align: center;
@@ -545,7 +599,8 @@ ul {
         top: -14px;
         background: #0C0D0D;
     }
-    input{
+
+    input {
         color: #FFFFFF;
         font-family: Poppins;
         font-size: 14px;
@@ -558,14 +613,15 @@ ul {
         background: transparent;
         border: none;
         outline: none;
-        &::placeholder{
+
+        &::placeholder {
             color: #7A6565;
         }
     }
 }
 
-.checkbox-group{
-    h6{
+.checkbox-group {
+    h6 {
         color: #FFF;
         font-family: Poppins;
         font-size: 17px;
@@ -575,14 +631,16 @@ ul {
         margin-top: -7px;
         margin-bottom: 15px;
     }
-    ul{
-        li{
+
+    ul {
+        li {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             gap: 10px;
             margin-bottom: 15px;
-            input{
+
+            input {
                 margin-top: 4px;
                 height: 18px;
                 width: 18px;
@@ -591,7 +649,8 @@ ul {
             }
         }
     }
-    label{
+
+    label {
         color: #FFF;
         font-family: Poppins;
         font-size: 16px;
@@ -600,22 +659,25 @@ ul {
         line-height: normal;
     }
 }
+
 /*-- book-consultation-section style end --*/
 
 /*-- celebrity-treatment-section start --*/
-.celebrity-treatment-section{
+.celebrity-treatment-section {
     margin-top: 123px;
     background: #000;
     padding-top: 97px;
     border-radius: 40px 40px 0px 0px;
     position: relative;
-    .treatment-img{
+
+    .treatment-img {
         position: absolute;
         right: 0px;
         top: 0px;
         z-index: 0;
     }
-    &::after{
+
+    &::after {
         content: '';
         height: 231px;
         background: #FFF;
@@ -626,12 +688,14 @@ ul {
         z-index: 1;
     }
 }
-.celebrity-treatment-text{
+
+.celebrity-treatment-text {
     max-width: 555px;
     padding-bottom: 24px;
     position: relative;
     z-index: 2;
-    h2{
+
+    h2 {
         color: #E2BA48;
         font-family: Syne;
         font-size: 93.353px;
@@ -639,7 +703,8 @@ ul {
         line-height: normal;
         margin-bottom: 0px;
     }
-    h3{
+
+    h3 {
         color: #FFF;
         font-family: Syne;
         font-size: 73.835px;
@@ -648,7 +713,8 @@ ul {
         line-height: normal;
     }
 }
-.limited-offer-section{
+
+.limited-offer-section {
     padding: 158px 24px 75px 62px;
     background: url(../images/bg/limited-offer-bg.png);
     background-size: 100% 100%;
@@ -658,15 +724,17 @@ ul {
     position: relative;
     z-index: 2;
 }
-.limited-offer-inner{
-    p{
+
+.limited-offer-inner {
+    p {
         color: #000;
         font-family: Poppins;
         font-size: 38px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        strong{
+
+        strong {
             font-weight: 700;
         }
     }
@@ -675,17 +743,19 @@ ul {
 /*-- celebrity-treatment-section end --*/
 
 /*-- book-now-payment-section start --*/
-.book-now-payment-section{
+.book-now-payment-section {
     background: #FFFFFF;
     padding-top: 36px;
     padding-bottom: 107px;
     margin-bottom: 12px;
-    .pay-list{
+
+    .pay-list {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 30px;
-        ul{
+
+        ul {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -693,8 +763,8 @@ ul {
             max-width: 876px;
             width: 100%;
         }
-        
-        .icon-btn{
+
+        .icon-btn {
             max-width: 288px;
             width: 100%;
             min-width: 180px;
@@ -704,14 +774,15 @@ ul {
 
     }
 }
+
 /*-- book-now-payment-section end --*/
 
 /*-- our-reviews-section start --*/
-.our-reviews-section{
+.our-reviews-section {
     padding-top: 93px;
     padding-bottom: 88px;
     position: relative;
-    &::after{
+    &::after {
         content: '';
         height: 100%;
         width: 65%;
@@ -719,16 +790,197 @@ ul {
         position: absolute;
         left: 0px;
         top: 0px;
+        z-index: 0;
     }
 }
-.our-review-left{
-    h2{
+
+.our-reviews-left {
+    position: relative;
+    z-index: 1;
+    max-width: 374px;
+    width: 100%;
+
+    h2 {
         color: #000;
         font-family: Syne;
         font-size: 60px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        margin-bottom: 48px;
+    }
+
+    .client-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            li {
+                margin-left: -17.5px;
+
+                &:nth-child(1) {
+                    margin-left: 0px;
+                }
+
+                .avater {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+
+        h6 {
+            color: #000;
+            font-family: Roboto;
+            font-size: 19.198px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30.169px;
+            margin-bottom: 0px;
+            strong {
+                font-weight: 700;
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
+
+.reviews-right{
+    position: relative;
+    z-index: 1;
+}
+.reviews-slide-card{
+    border-radius: 30px;
+    border: 2.724px solid #EDEDED;
+    background: #0E0D0D;
+    overflow: hidden;
+    padding: 30px 25px 25px 25px;
+    h6{
+        color: #F3EBEB;
+        font-family: Roboto;
+        font-size: 24.518px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48.355px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+    h5{
+        overflow: hidden;
+        color: #FFF;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Poppins;
+        font-size: 27.243px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+    p{
+        color: #E8E5E5;
+        font-family: Poppins;
+        font-size: 19.07px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .client{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 13px;
+        .avater{
+            height: 74px;
+            width: 74px;
+        }
+        span{
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 21.794px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+.reviews-slider{
+    .slick-list{
+        overflow: hidden;
+        margin-right: -50%;
+        .slick-track{
+            display: flex;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .slick-slide{
+                padding: 0px 12px;
+            }
+        }
+    }
+    .slick-next{
+        position: absolute;
+        right: auto;
+        left: -43%;
+        z-index: 111;
+        top: auto;
+        bottom: -10px;
+        height: 47px;
+        width: 47px;
+        border-radius: 50px;
+        background: #FFFFFF;
+        border: 2px solid #2F3B4B;
+        z-index: 1;
+        &::before{
+            content: url(../images/icons/slide-arrow-next.svg);
+            opacity: 1;
+        }
+        &:hover{
+            background: #2F3B4B;
+            &::before{
+                filter: brightness(100);
+            }
+        }
+    }
+    .slick-prev{
+        position: absolute;
+        right: auto;
+        left: -50%;
+        z-index: 111;
+        height: 47px;
+        width: 47px;
+        border-radius: 50px;
+        background: #FFFFFF;
+        border: 2px solid #2F3B4B;
+        top: auto;
+        bottom: -10px;
+        z-index: 1;
+        &::before{
+            content: url(../images/icons/slide-arrow-prev.svg);
+            opacity: 1;
+        }
+        &:hover{
+            background: #2F3B4B;
+            &::before{
+                filter: brightness(100);
+            }
+        }
     }
 }
 /*-- our-reviews-section end --*/
