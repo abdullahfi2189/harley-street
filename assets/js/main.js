@@ -14,6 +14,19 @@
              autoplaySpeed: 3000,
          });
      }
+     /*-- recent project slider --*/
+     var treatmentresultSlider = $(".treatment-result-slider");
+     if (treatmentresultSlider.length) {
+         $('.treatment-result-slider').slick({
+             slidesToShow: 2,
+             slidesToScroll: 1,
+             infinite: true,
+             autoplay: true,
+             arrows: true,
+             fade: false,
+             autoplaySpeed: 3000,
+         });
+     }
 
     /*-- banner-slider-Start --*/
     /*--

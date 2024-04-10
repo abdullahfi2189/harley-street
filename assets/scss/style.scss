@@ -1125,3 +1125,262 @@ ul {
     }
 }
 /*-- hair-transplant-method-section end --*/
+
+
+/*-- treatment-process-section start --*/
+.treatment-process-section{
+    h2{
+        margin-bottom: px;
+    }
+    .treatment-process-img{
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+        max-width: 708px;
+        width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .high-demand-card{
+            width: 384px;
+            position: absolute;
+            left: 34px;
+            bottom: 26px;
+            background: rgba(0, 0, 0, 0.59);
+            backdrop-filter: blur(11px);
+            border: none;
+            img{
+                max-width: min-content !important;
+            }
+            h4{
+                color: #FFFFFF;
+                span{
+                    color: #DDD;
+                }
+            }
+        }
+    }
+}
+
+.treatment-process-text{
+    width: 100%;
+    margin-left: auto;
+    ul{
+        li{
+            padding-left: 57px;
+            padding-bottom: 55px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 1.5px;
+                height: 100%;
+                background: #000;
+                position: absolute;
+                top: 3px;
+                left: 17.5px;
+                z-index: 0;
+            }
+            &:nth-last-child(1){
+                margin-bottom: 0px;
+                &::after{
+                    display: none;
+                }
+            }
+            .number{
+                height: 35px;
+                width: 35px;
+                overflow: hidden;
+                border-radius: 50%;
+                background: #2F3B4B;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #E2BA48;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                position: absolute;
+                top: 2px;
+                left: 0px;
+                z-index: 1;
+            }
+            h3{
+                color: #000;
+                font-family: Poppins;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 6px;
+            }
+            p{
+                color: #2F3B4B;
+                text-align: justify;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+/*-- treatment-process-section end --*/
+
+
+/*-- treatment result style start --*/
+.treatment-result-section{
+    padding-top: 108px;
+    h2{
+        margin-bottom: 16px;
+    }
+    p{
+        color: #2F3B4B;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0px;
+        max-width: 921px;
+        width: 100%;
+    }
+}
+.treatment-result-slider{
+    position: relative;
+    .slick-list{
+        padding-top: 212px;
+        overflow: hidden;
+        height: 600px;
+        margin-right: -35%;
+    }
+    .slick-track{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .treatment-result-slide{
+        padding: 0px 16.5px;
+    }
+    .slick-next{
+        position: absolute;
+        right: 0;
+        left: auto;
+        z-index: 111;
+        top: -20px;
+        bottom: auto;
+        height: 47px;
+        width: 47px;
+        border-radius: 50px;
+        background: #FFFFFF;
+        border: 2px solid #2F3B4B;
+        &::before{
+            content: url(../images/icons/slide-arrow-next.svg);
+            opacity: 1;
+        }
+        &:hover{
+            background: #2F3B4B;
+            &::before{
+                filter: brightness(100);
+            }
+        }
+    }
+    .slick-prev{
+        position: absolute;
+        right: 60px;
+        top: -20px;
+        left: auto;
+        bottom: auto;
+        z-index: 111;
+        height: 47px;
+        width: 47px;
+        border-radius: 50px;
+        background: #FFFFFF;
+        border: 2px solid #2F3B4B;
+        &::before{
+            content: url(../images/icons/slide-arrow-prev.svg);
+            opacity: 1;
+        }
+        &:hover{
+            background: #2F3B4B;
+            &::before{
+                filter: brightness(100);
+            }
+        }
+    }
+}
+.treatment-result-card{
+    border-radius: 46.844px;
+    background: #E2BA48;
+    height: 362px;
+    padding: 0px 20px 0px 20px;
+    .treatment-result-card-inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+    }
+    .result{
+        border-radius: 31.229px;
+        background: #FFF;
+        backdrop-filter: blur(11px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 49%;
+        margin-top: -147px;
+        padding-top: 20px;
+        overflow: hidden;
+        h3{
+            height: 55px;
+            width: 190px;
+            border-radius: 156.145px;
+            background: #4A4843;
+            margin-bottom: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 24.983px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.25px;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .result-card-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        h5{
+            color: #000;
+            font-family: Poppins;
+            font-size: 28.106px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0px;
+            strong{
+                font-weight: 600;
+            }
+            img{
+                margin-right: 12px;
+            }
+        }
+    }
+}
+/*-- treatment result style end --*/
