@@ -1294,3 +1294,154 @@ ul {
 }
 
 /*-- treatment result style end --*/
+/*-- CONSULTATION TYPE SECTION START --*/
+.consultation_type_wrapper {
+  margin-bottom: 60px;
+}
+.consultation_type_wrapper:nth-last-child(1) {
+  margin-bottom: 60px;
+}
+
+.consultation_type_content {
+  width: 100%;
+  padding-top: 40px;
+}
+.consultation_type_content-1 {
+  padding-left: 30px;
+}
+.consultation_type_content-2 {
+  padding-right: 30px;
+}
+.consultation_type_content h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 13px;
+  max-width: 572px;
+}
+.consultation_type_content h4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 37px;
+}
+.consultation_type_content h4 span {
+  color: #2F3B4B;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.consultation_type_content p {
+  color: #767676;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 42px;
+  max-width: 572px;
+}
+.consultation_type_content .booking_btn {
+  border-radius: 100px;
+  background: #E2BA48;
+  height: 60px;
+  width: 288px;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.consultation_type_image {
+  position: relative;
+  padding: 40px 0px;
+}
+.consultation_type_image::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background: #E2BA48;
+  height: 100%;
+  z-index: 0;
+}
+.consultation_type_image-1 {
+  text-align: right;
+}
+.consultation_type_image-1::after {
+  border-radius: 0px 50px 50px 0px;
+  left: -50%;
+}
+.consultation_type_image-2 {
+  text-align: left;
+  padding-left: 10px;
+}
+.consultation_type_image-2::after {
+  border-radius: 50px 0px 0px 50px;
+  right: -50%;
+}
+.consultation_type_image img {
+  position: relative;
+  z-index: 1;
+}
+
+.consultation_type_mini {
+  width: 105px;
+  height: 105px;
+  border-radius: 15px;
+  border: 3px solid #E2BA48;
+  background: rgba(0, 0, 0, 0.71);
+  -webkit-backdrop-filter: blur(11px);
+          backdrop-filter: blur(11px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+.consultation_type_mini-1 {
+  top: -25px;
+  right: 0px;
+}
+.consultation_type_mini-2 {
+  top: -25px;
+  left: 0px;
+}
+
+.consultation_type_mini h6, .consultation_type_mini_2 h6 {
+  color: #D4C6C6;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 23.276px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.consultation_type_mini p, .consultation_type_mini_2 p {
+  color: #E2BA48;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+/*-- CONSULTATION TYPE SECTION End --*/
