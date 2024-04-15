@@ -48,7 +48,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12.5px;
+    gap: 10px;
     text-align: center;
     font-family: Poppins;
     font-size: 13px;
@@ -57,11 +57,17 @@ img{
     padding: 7px 12px;
     border-radius: 69.659px;
     height: 42px;
-    width: 225px;
+    width: 231px;
     position: relative;
+    border: 2px solid transparent;
     &.bg-yellow {
         color: #000;
         background: #E2BA48;
+        &:hover{
+            background: #2F3B4B;
+            color: #FFFFFF;
+            animation: btnBgAnimetion 0.4s linear;
+        }
     }
 
     &.bg-none {
@@ -69,42 +75,75 @@ img{
         border-radius: 100px;
         border: 2px solid #2F3B4B;
         background: transparent;
+        &:hover{
+            background: #2F3B4B;
+            color: #FFFFFF;
+            animation: btnBgAnimetion 0.4s linear;
+        }
+    }
+    .btn-icon{
+        position: relative;
+        min-height: 30px;
+        min-width: 30px;
+        max-height: 30px;
+        max-width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+        }
     }
     
     .img1{
         opacity: 1;
-        display: block;
     }
     .img2{
         opacity: 0;
-        transform: rotate(45deg);
-        display: none;
     }
     &:hover{
-        background: #2F3B4B !important;
-        color: #FFFFFF !important;
-        animation: btnBgAnimetion 1s linear;
         .img1{
             opacity: 0;
-            display: none;
+            animation: btnIcon1 0.5s linear;
         }
         .img2{
-            display: block;
             opacity: 1;
             transform: rotate(45deg);
+            animation: btnIcon2 0.5s linear;
         }
     }
 }
 @keyframes btnBgAnimetion {
     0% {
-      background: red !important;
-      color: green !important;
+        color: #000;
+        background: #E2BA48;
     }
     100% {
-        background: #2F3B4B !important;
-        color: #FFFFFF !important;
+        background: #2F3B4B;
+        color: #FFFFFF;
     }
-  }
+}
+@keyframes btnIcon1 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes btnIcon2 {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(45deg);
+    }
+}
 
 .section-title {
     color: #000000;
@@ -225,6 +264,14 @@ img{
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
+    .header-btn{
+        .btn-icon{
+            min-height: 20px;
+            min-width: 20px;
+            max-height: 20px;
+            max-width: 20px;
+        }
+    }
 }
 
 .mobile-menu{
@@ -1019,26 +1066,41 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    .btn-icon{
+        position: relative;
+        min-height: 30px;
+        min-width: 30px;
+        max-height: 30px;
+        max-width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    
     .img1{
         opacity: 1;
-        display: block;
     }
     .img2{
         opacity: 0;
-        transform: rotate(45deg);
-        display: none;
     }
     &:hover{
-        background: #2F3B4B !important;
-        color: #FFFFFF !important;
+        animation: btnBgAnimetion 0.4s linear;
+        background: #2F3B4B;
+        color: #FFFFFF;
         .img1{
             opacity: 0;
-            display: none;
+            animation: btnIcon1 0.5s linear;
         }
         .img2{
-            display: block;
             opacity: 1;
             transform: rotate(45deg);
+            animation: btnIcon2 0.5s linear;
         }
     }
 }
@@ -1098,26 +1160,41 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    .btn-icon{
+        position: relative;
+        min-height: 30px;
+        min-width: 30px;
+        max-height: 30px;
+        max-width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    
     .img1{
         opacity: 1;
-        display: block;
     }
     .img2{
         opacity: 0;
-        transform: rotate(45deg);
-        display: none;
     }
     &:hover{
-        background: #2F3B4B !important;
-        color: #FFFFFF !important;
+        animation: btnBgAnimetion 0.4s linear;
+        background: #2F3B4B;
+        color: #FFFFFF;
         .img1{
             opacity: 0;
-            display: none;
+            animation: btnIcon1 0.5s linear;
         }
         .img2{
-            display: block;
             opacity: 1;
             transform: rotate(45deg);
+            animation: btnIcon2 0.5s linear;
         }
     }
 }
@@ -1863,7 +1940,7 @@ footer {
         .submit-btn {
             border-radius: 100px;
             background: linear-gradient(0deg, #E2BA48 0%, #E2BA48 100%), #FFF;
-            height: 50px;
+            padding: 12px 20px;
             width: 100%;
             color: #000;
             text-align: center;
@@ -1874,6 +1951,11 @@ footer {
             line-height: normal;
             border: none;
             outline: none;
+            transition: 0.4s;
+            &:hover{
+                background: #2F3B4B;
+                color: #FFFFFF;
+            }
         }
     }
 }
@@ -2495,6 +2577,9 @@ footer {
                 width: 45%;
                 color: #E2BA48;
                 border: 2px solid #E2BA48;
+                &:hover{
+                    border: 2px solid transparent;
+                }
             }
         }
     }
@@ -2857,26 +2942,41 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 18px;
+        .btn-icon{
+            position: relative;
+            min-height: 30px;
+            min-width: 30px;
+            max-height: 30px;
+            max-width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+    
+            }
+        }
+        
         .img1{
             opacity: 1;
-            display: block;
         }
         .img2{
             opacity: 0;
-            transform: rotate(45deg);
-            display: none;
         }
         &:hover{
-            background: #2F3B4B !important;
-            color: #FFFFFF !important;
+            animation: btnBgAnimetion 0.4s linear;
+            background: #2F3B4B;
+            color: #FFFFFF;
             .img1{
                 opacity: 0;
-                display: none;
+                animation: btnIcon1 0.5s linear;
             }
             .img2{
-                display: block;
                 opacity: 1;
                 transform: rotate(45deg);
+                animation: btnIcon2 0.5s linear;
             }
         }
     }
@@ -3061,7 +3161,12 @@ footer {
             }
             .submit-btn{
                 background: #2F3B4B;
+                border: 2px solid #2F3B4B;
                 color: #E2BA48;
+                &:hover{
+                    background: #E2BA48;
+                    color: #2F3B4B;
+                }
             }
         }
     }
