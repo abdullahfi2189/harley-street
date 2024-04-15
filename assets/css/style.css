@@ -59,6 +59,7 @@ img {
   border-radius: 69.659px;
   height: 42px;
   width: 225px;
+  position: relative;
 }
 .icon-btn.bg-yellow {
   color: #000;
@@ -70,7 +71,40 @@ img {
   border: 2px solid #2F3B4B;
   background: transparent;
 }
+.icon-btn .img1 {
+  opacity: 1;
+  display: block;
+}
+.icon-btn .img2 {
+  opacity: 0;
+  transform: rotate(45deg);
+  display: none;
+}
+.icon-btn:hover {
+  background: #2F3B4B !important;
+  color: #FFFFFF !important;
+  animation: btnBgAnimetion 1s linear;
+}
+.icon-btn:hover .img1 {
+  opacity: 0;
+  display: none;
+}
+.icon-btn:hover .img2 {
+  display: block;
+  opacity: 1;
+  transform: rotate(45deg);
+}
 
+@keyframes btnBgAnimetion {
+  0% {
+    background: red !important;
+    color: green !important;
+  }
+  100% {
+    background: #2F3B4B !important;
+    color: #FFFFFF !important;
+  }
+}
 .section-title {
   color: #000000;
   font-family: Syne;
@@ -951,6 +985,31 @@ footer {
   background: #E2BA48;
   padding: 10px 16px;
   border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book_now_button .btn .img1 {
+  opacity: 1;
+  display: block;
+}
+.book_now_button .btn .img2 {
+  opacity: 0;
+  transform: rotate(45deg);
+  display: none;
+}
+.book_now_button .btn:hover {
+  background: #2F3B4B !important;
+  color: #FFFFFF !important;
+}
+.book_now_button .btn:hover .img1 {
+  opacity: 0;
+  display: none;
+}
+.book_now_button .btn:hover .img2 {
+  display: block;
+  opacity: 1;
+  transform: rotate(45deg);
 }
 
 .book_now_button .btn img {
@@ -1009,6 +1068,32 @@ footer {
   background: #E2BA48;
   padding: 10px 16px;
   border-radius: 100px;
+  width: 323px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clinics_top .btn .img1 {
+  opacity: 1;
+  display: block;
+}
+.clinics_top .btn .img2 {
+  opacity: 0;
+  transform: rotate(45deg);
+  display: none;
+}
+.clinics_top .btn:hover {
+  background: #2F3B4B !important;
+  color: #FFFFFF !important;
+}
+.clinics_top .btn:hover .img1 {
+  opacity: 0;
+  display: none;
+}
+.clinics_top .btn:hover .img2 {
+  display: block;
+  opacity: 1;
+  transform: rotate(45deg);
 }
 
 .clinics_top .btn img {
@@ -2719,6 +2804,28 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 18px;
+}
+.consultation_type_content .booking_btn .img1 {
+  opacity: 1;
+  display: block;
+}
+.consultation_type_content .booking_btn .img2 {
+  opacity: 0;
+  transform: rotate(45deg);
+  display: none;
+}
+.consultation_type_content .booking_btn:hover {
+  background: #2F3B4B !important;
+  color: #FFFFFF !important;
+}
+.consultation_type_content .booking_btn:hover .img1 {
+  opacity: 0;
+  display: none;
+}
+.consultation_type_content .booking_btn:hover .img2 {
+  display: block;
+  opacity: 1;
+  transform: rotate(45deg);
 }
 
 .consultation_type_image {
