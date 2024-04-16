@@ -735,6 +735,63 @@ img {
   z-index: 1;
 }
 
+.faq-tab .nav-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.faq-tab .nav-tabs .nav-link {
+  border: none;
+  outline: none;
+  color: #858585;
+  font-family: Syne;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 3px solid transparent;
+}
+.faq-tab .nav-tabs .nav-link.active {
+  color: #000000;
+  border-bottom: 3px solid #000000;
+  background: transparent;
+}
+.faq-tab .nav-tabs .nav-link:hover {
+  color: #000000;
+}
+
+/*-- faq-section Start --*/
+.faq_items {
+  padding-top: 102px;
+  padding-bottom: 227px;
+  max-width: 1097px;
+  width: 100%;
+  margin: auto;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #000 !important;
+}
+
+.accordion-button {
+  color: #2F3B4B;
+  font-family: Syne;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 16px 0px;
+  align-items: flex-start;
+}
+.accordion-button::after {
+  display: none;
+}
+
+/*-- faq-section end --*/
 /* ======= {FAQ SECTION END} ======= */
 /* ======= {FOOTER START} ======= */
 footer {
@@ -3108,32 +3165,6 @@ footer {
 }
 
 /*-- video-consultation-section end --*/
-/*-- faq-section Start --*/
-.faq_items {
-  padding-top: 102px;
-  padding-bottom: 227px;
-  max-width: 1097px;
-  width: 100%;
-  margin: auto;
-}
-
-.accordion-item {
-  border-bottom: 1px solid #000 !important;
-}
-
-.accordion-button {
-  color: #2F3B4B;
-  font-family: Syne;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.accordion-button::after {
-  display: none;
-}
-
-/*-- faq-section end --*/
 .upload-fild {
   height: 60px;
   width: 100%;

@@ -133,9 +133,20 @@
             font-size: 14px;
         }
     }
+    .faq-tab{
+        .nav-tabs {
+            .nav-link{
+                font-size: 40px;
+            }
+        }
+    }
 
     .accordion-button {
         font-size: 24px;
+        img{
+            max-width: 30px;
+            margin-top: 2px;
+        }
     }
 
     .book-consultation-section {
@@ -336,6 +347,19 @@
             width: 32px;
         }
     }
+    .faq-tab{
+        .nav-tabs {
+            .nav-link{
+                font-size: 30px;
+            }
+        }
+    }
+    .accordion-button {
+        img{
+            max-width: 24px;
+            margin-top: 3px;
+        }
+    }
     .consultation_type_content{
         text-align: center;
         padding: 0px;
@@ -487,6 +511,13 @@
     }
     .book-now-payment-section{
         padding-bottom: 60px;
+    }
+    .faq-tab{
+        .nav-tabs {
+            .nav-link{
+                font-size: 24px;
+            }
+        }
     }
     .why-chose-btns{
         flex-wrap: wrap;
@@ -791,6 +822,20 @@
     .offcanvas_we_accept .cards {
         display: inherit;
     }
+
+    .faq-tab{
+        .nav-tabs {
+            .nav-link{
+                font-size: 18px;
+            }
+        }
+    }
+    .accordion-button{
+        img{
+            max-width: 18px;
+            margin-top: 4px;
+        }
+    }
     
 }
 
@@ -812,6 +857,13 @@
     }
     .your_next_step::before {
         width: 287px;
+    }
+    .faq-tab{
+        .nav-tabs {
+            .nav-link{
+                font-size: 16px;
+            }
+        }
     }
 }
 
