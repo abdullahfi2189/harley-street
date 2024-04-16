@@ -1305,7 +1305,6 @@ footer {
 .meet_our_doctors_section {
     padding: 55px 0;
 }
-.doctors_top {}
 .doctors_top h2 {
     color: #000;
     font-family: Syne;
@@ -1318,9 +1317,6 @@ footer {
 .doctors_main {
     padding: 40px 0;
 }
-
-.doctors_item {}
-
 .doctors_item img {
     width: 100%;
     border-radius: 30px;
@@ -1347,6 +1343,47 @@ footer {
     line-height: normal;
     margin: 0;
     font-weight: 400;
+}
+.doctors_main{
+    .slick-list{
+        overflow-x: hidden;
+        .slick-track{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .slick-dotted{
+        &.slick-slider{
+            position: relative;
+        }
+    }
+    .slick-dots{
+        bottom: -25px;
+        li{
+            button{
+                &::before{
+                    font-size: 7px;
+                    color: #858585;
+                }
+            }
+            &.slick-active{
+                button{
+                    &::before{
+                        font-size: 10px;
+                        color: #E2BA48;
+                    }
+                }
+            }
+        }
+    }
+    .icon-btn{
+        height: 60px;
+        width: 323px;
+        margin: auto;
+        margin-top: 50px;
+        font-size: 18px;
+    }
 }
 /* ======= ( MEET OUR DOCTORS SECTION END ) ======= */
 

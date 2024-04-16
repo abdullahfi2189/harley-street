@@ -1310,6 +1310,36 @@ footer {
   font-weight: 400;
 }
 
+.doctors_main .slick-list {
+  overflow-x: hidden;
+}
+.doctors_main .slick-list .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doctors_main .slick-dotted.slick-slider {
+  position: relative;
+}
+.doctors_main .slick-dots {
+  bottom: -25px;
+}
+.doctors_main .slick-dots li button::before {
+  font-size: 7px;
+  color: #858585;
+}
+.doctors_main .slick-dots li.slick-active button::before {
+  font-size: 10px;
+  color: #E2BA48;
+}
+.doctors_main .icon-btn {
+  height: 60px;
+  width: 323px;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
 /* ======= ( MEET OUR DOCTORS SECTION END ) ======= */
 /* ======= ( OFFCANVAS SECTION END ) ======= */
 .offcanvas {

@@ -47,6 +47,44 @@
      }
 
    
+     var doctorsSlider = $(".doctors-slider");
+     if (doctorsSlider.length) {
+         $('.doctors-slider').slick({
+             slidesToShow: 4,
+             slidesToScroll: 1,
+             infinite: true,
+             autoplay: true,
+             arrows: false,
+             dots: true,
+             fade: false,
+             autoplaySpeed: 3000,
+             responsive: [
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 410,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }
+                },
+              ]
+         });
+     }
+
+   
 
 
     
