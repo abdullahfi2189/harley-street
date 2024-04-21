@@ -80,8 +80,16 @@
 
     .limited-offer-section {
         padding: 139px 24px 75px 59px;
+        transform: translateY(-125px);
 
     }
+    .book-now-payment-section{
+        margin-top: -40px;
+        padding-top: 0px;
+        position: relative;
+        z-index: 111;
+    }
+    
 
     .limited-offer-inner p {
         font-size: 24px;
@@ -609,7 +617,7 @@
         }
     }
     .our_clinics_section{
-        padding-top: 40px;
+        padding-top: 20px;
     }
     .hair_styles{
         justify-content: center;
@@ -632,7 +640,11 @@
         }
     }
     .limited-offer-section{
-        padding: 119px 20px 15px 20px;
+        padding: 75px 20px 15px 20px;
+        // background: url(../images/bg/limited-offer-bg-mobile.png);
+        // background-size: cover;
+        // background-position: left top;
+        // background-repeat: no-repeat;
     }
     .celebrity-treatment-section{
         margin-top: 70px;
@@ -723,6 +735,26 @@
 }
 
 @media only screen and (max-width: 575px) {
+    .clinics_content_left {
+        h4{
+            font-size: 14px;
+        }
+        p{
+            font-size: 12px;
+        }
+        
+    }
+    .clinics_item_wrapper{
+        padding: 12px;
+    }
+    .clinics_item_btn{
+        height: 28px;
+        width: 28px;
+        img{
+            height: 9px;
+            width: 9px;
+        }
+    }
     .high-demand-card {
         h4{
             font-size: 24px;
