@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1360px) {
   .container {
-    max-width: 1390px;
+    max-width: 1302px;
     padding: 0px 20px;
     width: 100%;
     margin: auto;
@@ -149,6 +149,12 @@
   .treatment-result-card .result-card-footer h5 {
     font-size: 20px;
   }
+  .hair-transplant-method-content .dark-card-img-section .dark-card-img {
+    text-align: center;
+  }
+  .hair-transplant-method-content .dark-card-img-section .dark-card-img img {
+    width: 100%;
+  }
   .treatment-result-card {
     height: 206px;
   }
@@ -234,7 +240,10 @@
   }
   .video-consultation-left .high-demand-card {
     margin: auto;
-    margin-bottom: 72px;
+    margin-bottom: 150px;
+  }
+  .video-consultation-right::after {
+    display: none;
   }
   .dark-card-img-section {
     width: 90%;
@@ -310,6 +319,7 @@
     left: auto;
     right: auto;
     text-align: center;
+    top: auto;
   }
   .our-reviews-section {
     padding-bottom: 140px;
@@ -344,6 +354,12 @@
   .your_next_step::before {
     height: 85%;
   }
+  .consultant_wrapper {
+    bottom: -20px;
+  }
+  .down_arrow {
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   .top-header-left {
@@ -351,6 +367,20 @@
   }
   .top-header-inner {
     flex-direction: row-reverse;
+    justify-content: center;
+    gap: 24px;
+  }
+  .top-header-center {
+    position: relative;
+  }
+  .top-header-center::after {
+    content: "";
+    width: 2px;
+    height: 16px;
+    background: #FFFFFF;
+    position: absolute;
+    left: -12px;
+    top: 1px;
   }
   .banner-bottom {
     flex-wrap: wrap-reverse;
@@ -532,7 +562,7 @@
     display: none;
   }
   .your_next_step {
-    padding: 93px 38.24px 43px 46px;
+    padding: 93px 20px 43px 20px;
   }
   .your_next_step_wrapper {
     display: inherit;
@@ -542,8 +572,8 @@
     right: 0;
     bottom: 10px;
     border-radius: 23.32px 0 0 23.32px;
-    width: 623px;
-    height: 573px;
+    width: 84% !important;
+    height: 87%;
   }
   .your_next_step h2 {
     width: 321px;
@@ -584,6 +614,9 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  .top-header-inner {
+    font-size: 12px;
+  }
   .clinics_content_left h4 {
     font-size: 14px;
   }
@@ -624,23 +657,8 @@
   .doctors_content h5 {
     font-size: 16px;
   }
-  .top-header-center {
-    position: relative;
-  }
-  .top-header-center::after {
-    content: "";
-    width: 2px;
-    height: 16px;
-    background: #FFFFFF;
-    position: absolute;
-    left: -20px;
-    top: 1px;
-  }
   .footer_item_3 .newsletter_btn {
     width: 100%;
-  }
-  .header-right .icon-btn {
-    width: 152px;
   }
   .mobile-menu-content {
     max-width: 100%;
@@ -684,7 +702,7 @@
     position: inherit;
   }
   .your_next_step::before {
-    width: 437px;
+    width: 74% !important;
   }
   .nextstep_bottom_right {
     margin-top: 5px;
@@ -701,8 +719,14 @@
   }
 }
 @media only screen and (max-width: 410px) {
-  .top-header-inner {
+  .your_next_step::before {
+    width: 70% !important;
+  }
+  .header-right .icon-btn {
+    width: 209px;
     font-size: 12px;
+    gap: 5px;
+    padding: 7px 0px;
   }
   .paynow_buttons .btn {
     font-size: 12px;

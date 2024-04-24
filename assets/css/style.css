@@ -528,7 +528,7 @@ img {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 80px 0;
+  padding: 80px 0 60px 0px;
   position: relative;
 }
 
@@ -538,7 +538,7 @@ img {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 220px;
+  height: 240px;
   background-color: #E2BA48;
   z-index: 0;
 }
@@ -630,7 +630,7 @@ img {
 
 .hair_style_field {
   margin-left: auto;
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 .hair_style_field h4 {
@@ -640,7 +640,8 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
+  margin-top: 60px;
 }
 
 .hair_styles {
@@ -661,7 +662,7 @@ img {
   background: #2F3B4B;
   text-align: center;
   padding: 15px;
-  margin: 10px;
+  margin: 15px 0px;
 }
 
 .hair_style_item img {
@@ -1306,10 +1307,6 @@ footer {
   background: url(<path-to-image>) #7790A6 0px 1.919px/100% 148.635% no-repeat;
 }
 
-.doctors_content {
-  padding: 0 48px;
-}
-
 .doctors_content h5 {
   color: #000;
   font-family: Poppins;
@@ -1442,7 +1439,6 @@ footer {
 .offcanvas-header {
   padding: 0;
   padding-right: 50px;
-  margin-top: 27px;
   margin-bottom: 7.72px;
 }
 
@@ -1613,6 +1609,7 @@ footer {
 .thankyou_header_top {
   padding: 10px 0 9px 0;
   background: #000;
+  margin-bottom: 40px;
 }
 
 .thankyou_header_top p {
@@ -1645,7 +1642,7 @@ footer {
   background-image: url(../images/bg/thankyou-bg.png);
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: 324px;
+  background-size: 360px;
   position: relative;
 }
 
@@ -1734,12 +1731,7 @@ footer {
 
 .consultant_wrapper {
   position: absolute;
-  bottom: 0;
-}
-
-.consultant_wrapper img {
-  width: 407px;
-  height: 375.247px;
+  bottom: -5px;
 }
 
 .your_next_step {
@@ -1944,7 +1936,7 @@ footer {
 .consultation-left .consultant-img {
   position: absolute;
   top: 25%;
-  right: -14%;
+  right: -18%;
   z-index: 1;
 }
 .consultation-left p {
@@ -2005,9 +1997,9 @@ footer {
   padding: 52px 45px 47px 45px;
   border-radius: 30px;
   overflow: hidden !important;
-  max-width: 530px;
+  max-width: 620px;
   width: 100%;
-  margin-right: auto;
+  margin-left: auto;
   position: relative;
   z-index: 0;
 }
@@ -2675,6 +2667,13 @@ footer {
   font-weight: 600;
   line-height: normal;
   margin-bottom: 17px;
+}
+
+.hair-transplant-method-content .dark-card-img-section .dark-card-img {
+  text-align: right;
+}
+.hair-transplant-method-content .dark-card-img-section .dark-card-img img {
+  width: 92%;
 }
 
 /*-- hair-transplant-method-section end --*/
