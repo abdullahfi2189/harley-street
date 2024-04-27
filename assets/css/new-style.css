@@ -1,0 +1,72 @@
+.checkbox-group .form-check-input{
+    --bs-form-check-bg: transparent !important;
+    border: none !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    height: auto;
+    gap: 9px;
+    margin-left: -15px;
+}  
+   
+.consultation-form-card form .submit-btn{
+    margin-top: 20px;
+}
+.offcanvas_main .form-label{
+    z-index: 111;
+}
+.high-demand-card h4 {
+    line-height: 50px;
+}
+.high-demand-card h4 span{
+    line-height: 28px;
+}
+.consultation-right{
+    position: relative;
+}
+.consultation-right::after {
+    content: url(../images/icons/arrow-shape.svg);
+    position: absolute;
+    top: -72px;
+    left: -94px;
+    transform: rotateX(175deg) rotateY(8deg) rotate(-78deg);
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.accordion-body {
+    padding: 0px 15px;
+}
+.accordion-body {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+.video-consultation-right::after{
+    left: 35%;
+}
+@media only screen and (max-width: 991px) {
+    .video-consultation-content{
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .consultation-right::after {
+        display: none;
+    }
+    .faq_items{
+        padding: 100px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .faq_items{
+        padding: 80px 20px;
+    }
+    .we_accept{
+        display: none;
+    }
+}
